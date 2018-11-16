@@ -21,7 +21,11 @@ end
 def apply_discount
   a = @total*self.discount/100
   self.total -= a.to_i
-  "After the discount, the total comes to #{total}."
+  if discount > 0
+    "After the discount, the total comes to $#{total}."
+  else
+    "There is no discount to apply."
+  end
 end
 
 def items
