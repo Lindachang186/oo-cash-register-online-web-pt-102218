@@ -33,7 +33,7 @@ def items
 end
 
 def void_last_transaction
-  binding.pry
+  @total -= last_transaction
 end
 
 end
